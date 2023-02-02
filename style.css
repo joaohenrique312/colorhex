@@ -1,0 +1,37 @@
+body{
+    font: normal 1rem Arial;
+}
+
+header{
+    color: black;
+    text-align: center;
+}
+
+
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 31.25rem;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0.363);
+}
+
+#colorPicker {
+    background-color: none;
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 60px;
+    cursor: pointer;
+}
+
+button{
+    padding: 10px 24px;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color HEX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Brincadeira de criança</h1>
+    </header>
+    <section>
+        <div class="main">
+            <p>Escolha uma cor e veja a surpresa acontecendo... <input type="color" id="colorPicker" value="#6a5acd" onclick="myColor()"></p>
+            <p>Código HEX da cor mostrada: <input type="text" id="box"></p>
+        </div> 
+    </section>
+
+    <script>
+        function myColor() {
+            
+        var color = document.getElementById('colorPicker').value;
+
+        document.body.style.backgroundColor = color;
+
+        document.getElementById('box').value = color;
+        }
+
+        document.getElementById('colorPicker')
+        .addEventListener('input', myColor);
+        
+    </script>
+
+</body>
+</html>
